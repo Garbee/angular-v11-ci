@@ -31,4 +31,3 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | g
   && apt-get clean \
   && rm -rf /var/lib/apt/lists/*
 
-RUN npx playwright install
