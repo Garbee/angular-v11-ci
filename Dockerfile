@@ -25,7 +25,7 @@ RUN curl -fsSL https://cli.github.com/packages/githubcli-archive-keyring.gpg | g
   && echo "deb [arch=$(dpkg --print-architecture) signed-by=/usr/share/keyrings/githubcli-archive-keyring.gpg] https://cli.github.com/packages stable main" | tee /etc/apt/sources.list.d/github-cli.list > /dev/null \
   && curl -sL https://deb.nodesource.com/setup_14.x | bash - \
   && apt-get update \
-  && apt-get install gh yamllint jq shellcheck nodejs -y \
+  && apt-get install gh yamllint jq shellcheck nodejs chromium-browser -y \
   && npm install -g @ls-lint/ls-lint @angular/cli@11 \
   && npx playwright install-deps \
   && apt-get clean \
